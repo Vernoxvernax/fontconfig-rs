@@ -785,6 +785,8 @@ dlib::external_library!(Fc, "fontconfig",
 
         fn FcPatternFormat(*mut FcPattern, *const FcChar8) -> *mut FcChar8,
 
+        fn FcWeightFromOpenType(c_int) -> c_int,
+
         fn FcStrCopy(*const FcChar8) -> *mut FcChar8,
 
         fn FcStrCopyFilename(*const FcChar8) -> *mut FcChar8,
