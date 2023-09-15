@@ -21,7 +21,7 @@ pub mod statics {
     use once_cell::sync::Lazy;
 
     static SONAME: &str = if cfg!(windows) {
-        "libfontconfig.dll"
+        "libfontconfig-1.dll"
     } else if cfg!(target_vendor = "apple") {
         "libfontconfig.dylib.1"
     } else {
